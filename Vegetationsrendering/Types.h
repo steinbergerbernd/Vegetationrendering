@@ -1,0 +1,8 @@
+#include "GameTime.h"
+#include "Matrix.h"
+#include "Plane.h"
+#include "Point.h"
+#include "Quaternion.h"
+#include "Vector2.h"
+#include "Vector3.h"
+#include "Vector4.h"

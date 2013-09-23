@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{3d7f3ec7-0dbc-456e-8e4b-de36f2fd26d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types">
+      <UniqueIdentifier>{62ce04ea-a2c9-43b7-8452-8252aa8f7b7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{d2f2b6be-fc05-4bfc-b57e-b3cca12ea916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{1f54e050-8ab4-4c50-878d-2616b4b4e16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{b94e9673-3b49-4c8c-b124-4166ed2d2bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Config">
+      <UniqueIdentifier>{d072813f-eb17-4dcc-9488-4915b6d3e3ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Constants">
+      <UniqueIdentifier>{4d453039-210c-450c-84c2-06450a049185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exceptions">
+      <UniqueIdentifier>{ac9a6b0a-1acc-45a9-8a63-e8d8895500e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain">
+      <UniqueIdentifier>{69b6f2fe-ce6a-4930-b7f4-232857311e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Effects">
+      <UniqueIdentifier>{dff378be-139c-416d-afa6-1d874000f7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Textures">
+      <UniqueIdentifier>{486b1d8d-376f-40ad-b93e-7d0973ed0bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Textures\Terrain">
+      <UniqueIdentifier>{58286a65-2481-4879-99df-34c93fa739a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{49727a99-669f-4049-bbb9-904111d6fb19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Light">
+      <UniqueIdentifier>{1dcf74e0-e425-4332-834b-0a04ff0ac31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grass">
+      <UniqueIdentifier>{5752be68-4872-44e0-9f54-c1741e9fdd84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Textures\Grass">
+      <UniqueIdentifier>{d577df50-0f9f-4a1f-b16c-fe241df863c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trees">
+      <UniqueIdentifier>{5e771bc6-dcf7-45be-92bf-dd8bbbbf8e89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FBX">
+      <UniqueIdentifier>{74e30eb4-282c-4b4e-ae2d-8d64c4195cc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Models">
+      <UniqueIdentifier>{a711aa35-cecd-488f-ba5a-73d1b15b8e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\UI">
+      <UniqueIdentifier>{f7f5cc82-10c1-4202-9af1-5dd69dee71bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Textures\Trees">
+      <UniqueIdentifier>{ee2fe746-bccd-4850-b690-22d69a166ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain\Advanced">
+      <UniqueIdentifier>{23673857-d125-4349-8de7-52b6230f4799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Triangle">
+      <UniqueIdentifier>{fa3d5ee0-a7a1-44d8-bdd2-eb14da2b0457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DefaultModel">
+      <UniqueIdentifier>{4e1c7449-d6e0-473d-b17b-d61a5713494a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="DXUT11\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Core\DXUTDevice9.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Core\DXUTDevice11.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Optional\DXUTcamera.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Optional\SDKmesh.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Optional\SDKsound.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT11\Optional\SDKwavefile.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="VegetationRendering.cpp" />
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardState.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseState.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigKeys.cpp">
+      <Filter>Constants</Filter>
+    </ClCompile>
+    <ClCompile Include="Exceptions.cpp">
+      <Filter>Constants</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingFrustum.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="GSGrass.cpp">
+      <Filter>Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="FBXModel.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexTree.cpp">
+      <Filter>Trees</Filter>
+    </ClCompile>
+    <ClCompile Include="TessellationTerrain.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainBlock.cpp">
+      <Filter>Terrain\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainController.cpp">
+      <Filter>Terrain\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainGeometry.cpp">
+      <Filter>Terrain\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainTessellator.cpp">
+      <Filter>Terrain\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainView.cpp">
+      <Filter>Terrain\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexGrass.cpp">
+      <Filter>Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultModel.cpp">
+      <Filter>DefaultModel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DXUT11\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Core\DXUTDevice9.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Core\DXUTDevice11.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\DXUTcamera.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\DXUTLockFreePipe.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\SDKmesh.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\SDKsound.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT11\Optional\SDKwavefile.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="VegetationRendering.h" />
+    <ClInclude Include="GameTime.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDevice.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardState.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseState.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigKeys.h">
+      <Filter>Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions.h">
+      <Filter>Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="MathHelper.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingFrustum.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="ContainmentType.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="GSGrass.h">
+      <Filter>Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="FBXModel.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="FBXVertex.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="FBXMaterial.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexTree.h">
+      <Filter>Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="TessellationTerrain.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainView.h">
+      <Filter>Terrain\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainBlock.h">
+      <Filter>Terrain\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainController.h">
+      <Filter>Terrain\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainGeometry.h">
+      <Filter>Terrain\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainInstance.h">
+      <Filter>Terrain\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainPoint.h">
+      <Filter>Terrain\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainTessellator.h">
+      <Filter>Terrain\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexGrass.h">
+      <Filter>Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultModel.h">
+      <Filter>DefaultModel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Config\Config.txt">
+      <Filter>Content\Config</Filter>
+    </None>
+    <None Include="Content\Effects\Terrain.fx">
+      <Filter>Content\Effects</Filter>
+    </None>
+    <None Include="Content\Textures\Terrain\Grass.png">
+      <Filter>Content\Textures\Terrain</Filter>
+    </None>
+    <None Include="Content\Textures\Terrain\Heightmap.png">
+      <Filter>Content\Textures\Terrain</Filter>
+    </None>
+    <None Include="Content\Textures\Terrain\Normalmap.png">
+      <Filter>Content\Textures\Terrain</Filter>
+    </None>
+    <None Include="Content\Textures\Terrain\Rock.png">
+      <Filter>Content\Textures\Terrain</Filter>
+    </None>
+    <None Include="Content\Textures\Terrain\Sand.png">
+      <Filter>Content\Textures\Terrain</Filter>
+    </None>
+    <None Include="Content\Textures\Terrain\Stone.png">
+      <Filter>Content\Textures\Terrain</Filter>
+    </None>
+    <None Include="Content\Textures\Terrain\Wavemap.png">
+      <Filter>Content\Textures\Terrain</Filter>
+    </None>
+    <None Include="TriangleShaders.fx">
+      <Filter>Triangle</Filter>
+    </None>
+    <None Include="Content\Textures\Grass\grass_guide_v3_tex.dds">
+      <Filter>Content\Textures\Grass</Filter>
+    </None>
+    <None Include="Content\Textures\Grass\grass_v1_basic_tex.dds">
+      <Filter>Content\Textures\Grass</Filter>
+    </None>
+    <None Include="Content\Textures\Grass\grass_v2_light_tex.dds">
+      <Filter>Content\Textures\Grass</Filter>
+    </None>
+    <None Include="Content\Textures\Grass\grass_v3_dark_tex.dds">
+      <Filter>Content\Textures\Grass</Filter>
+    </None>
+    <None Include="Content\Effects\GSGrass.fx">
+      <Filter>Content\Effects</Filter>
+    </None>
+    <None Include="Content\UI\Font.dds">
+      <Filter>Content\UI</Filter>
+    </None>
+    <None Include="Content\Effects\DefaultModelShader.fx">
+      <Filter>Content\Effects</Filter>
+    </None>
+    <None Include="ThinTree.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="Content\Effects\Trunk.fx">
+      <Filter>Content\Effects</Filter>
+    </None>
+    <None Include="Content\Models\thinTree.sdkmesh">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="Content\Models\tree2.sdkmesh">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="Content\Models\trunk414.sdkmesh">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="bark.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="blatt.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="trunk414.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="Content\Effects\TessellationTerrain.fx">
+      <Filter>Content\Effects</Filter>
+    </None>
+    <None Include="Content\Effects\SimpleTerrain.fx">
+      <Filter>Content\Effects</Filter>
+    </None>
+    <None Include="Content\Textures\Terrain\Grass.dds">
+      <Filter>Content\Textures\Terrain</Filter>
+    </None>
+    <None Include="Content\Textures\Trees\trunk414_normalmap.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="Content\Textures\Trees\rinde.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="Content\Textures\Trees\rinde_bumpmap.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="Content\Effects\ComplexGrass.fx">
+      <Filter>Content\Effects</Filter>
+    </None>
+    <None Include="Content\Models\GrassPatch.sdkmesh">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="GrassBlade.dds">
+      <Filter>Content\Textures\Grass</Filter>
+    </None>
+    <None Include="Content\Effects\GeneralShaderFunctions.hlsl">
+      <Filter>Content\Effects</Filter>
+    </None>
+    <None Include="Content\Textures\Trees\trunk414_front.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="Content\Textures\Trees\trunk414_side.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+    <None Include="Content\Textures\Trees\trunk414_top.dds">
+      <Filter>Content\Textures\Trees</Filter>
+    </None>
+  </ItemGroup>
+</Project>

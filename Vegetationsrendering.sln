@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vegetationsrendering", "Vegetationsrendering\Vegetationsrendering.vcxproj", "{549D36AA-451D-4D3E-88CE-051DA8715492}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Effects11", "Effects11\Effects11_2010.vcxproj", "{DF460EAB-570D-4B50-9089-2E2FC801BF38}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://spielplatz:8080/tfs/vegetationrendering
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Effects11\\Effects11_2010.vcxproj
+		SccProjectName1 = Effects11
+		SccLocalPath1 = Effects11
+		SccProjectUniqueName2 = Vegetationsrendering\\Vegetationsrendering.vcxproj
+		SccProjectName2 = Vegetationsrendering
+		SccLocalPath2 = Vegetationsrendering
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Profile|Win32 = Profile|Win32
+		Profile|x64 = Profile|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Debug|Win32.ActiveCfg = Debug|Win32
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Debug|Win32.Build.0 = Debug|Win32
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Debug|x64.ActiveCfg = Debug|Win32
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Profile|Win32.ActiveCfg = Release|Win32
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Profile|Win32.Build.0 = Release|Win32
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Profile|x64.ActiveCfg = Release|Win32
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Release|Win32.ActiveCfg = Release|Win32
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Release|Win32.Build.0 = Release|Win32
+		{549D36AA-451D-4D3E-88CE-051DA8715492}.Release|x64.ActiveCfg = Release|Win32
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Debug|Win32.Build.0 = Debug|Win32
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Debug|x64.ActiveCfg = Debug|x64
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Debug|x64.Build.0 = Debug|x64
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Profile|Win32.ActiveCfg = Profile|Win32
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Profile|Win32.Build.0 = Profile|Win32
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Profile|x64.ActiveCfg = Profile|x64
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Profile|x64.Build.0 = Profile|x64
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Release|Win32.ActiveCfg = Release|Win32
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Release|Win32.Build.0 = Release|Win32
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Release|x64.ActiveCfg = Release|x64
+		{DF460EAB-570D-4B50-9089-2E2FC801BF38}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

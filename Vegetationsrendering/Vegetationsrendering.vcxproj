@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{549D36AA-451D-4D3E-88CE-051DA8715492}</ProjectGuid>
+    <RootNamespace>Vegetationsrendering</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>DXUT11\Core;FBXSDK\include;DXUT11\Optional;$(SolutionDir)\Effects11\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dcompiler.lib;d3dx11d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;dsound.lib;DXGI.lib;wininet.lib;fbxsdk-2012.1-mdd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <AdditionalLibraryDirectories>$(ProjectDir)\FBXSDK\lib\vs2010\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBMCT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>DXUT11\Core;FBXSDK\include;DXUT11\Optional;$(SolutionDir)\Effects11\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\FBXSDK\lib\vs2010\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBMCT</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>d3dcompiler.lib;d3dx11d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;dsound.lib;DXGI.lib;wininet.lib;fbxsdk-2012.1-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="BoundingFrustum.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ComplexGrass.cpp" />
+    <ClCompile Include="ComplexTree.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="ConfigKeys.cpp" />
+    <ClCompile Include="DXUT11\Core\DXUT.cpp" />
+    <ClCompile Include="DXUT11\Core\DXUTDevice11.cpp" />
+    <ClCompile Include="DXUT11\Core\DXUTDevice9.cpp" />
+    <ClCompile Include="DXUT11\Core\DXUTmisc.cpp" />
+    <ClCompile Include="DXUT11\Optional\DXUTcamera.cpp" />
+    <ClCompile Include="DXUT11\Optional\DXUTgui.cpp" />
+    <ClCompile Include="DXUT11\Optional\DXUTres.cpp" />
+    <ClCompile Include="DXUT11\Optional\DXUTsettingsdlg.cpp" />
+    <ClCompile Include="DXUT11\Optional\SDKmesh.cpp" />
+    <ClCompile Include="DXUT11\Optional\SDKmisc.cpp" />
+    <ClCompile Include="DXUT11\Optional\SDKsound.cpp" />
+    <ClCompile Include="DXUT11\Optional\SDKwavefile.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="FBXModel.cpp" />
+    <ClCompile Include="GSGrass.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="KeyboardState.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="MouseState.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="TessellationTerrain.cpp" />
+    <ClCompile Include="TerrainBlock.cpp" />
+    <ClCompile Include="TerrainController.cpp" />
+    <ClCompile Include="TerrainGeometry.cpp" />
+    <ClCompile Include="TerrainTessellator.cpp" />
+    <ClCompile Include="TerrainView.cpp" />
+    <ClCompile Include="DefaultModel.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Vector4.cpp" />
+    <ClCompile Include="VegetationRendering.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoundingBox.h" />
+    <ClInclude Include="BoundingFrustum.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ComplexGrass.h" />
+    <ClInclude Include="ComplexTree.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="ConfigKeys.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="ContainmentType.h" />
+    <ClInclude Include="Converter.h" />
+    <ClInclude Include="DXUT11\Core\DXUT.h" />
+    <ClInclude Include="DXUT11\Core\DXUTDevice11.h" />
+    <ClInclude Include="DXUT11\Core\DXUTDevice9.h" />
+    <ClInclude Include="DXUT11\Core\DXUTmisc.h" />
+    <ClInclude Include="DXUT11\Optional\DXUTcamera.h" />
+    <ClInclude Include="DXUT11\Optional\DXUTgui.h" />
+    <ClInclude Include="DXUT11\Optional\DXUTLockFreePipe.h" />
+    <ClInclude Include="DXUT11\Optional\DXUTres.h" />
+    <ClInclude Include="DXUT11\Optional\DXUTsettingsdlg.h" />
+    <ClInclude Include="DXUT11\Optional\SDKmesh.h" />
+    <ClInclude Include="DXUT11\Optional\SDKmisc.h" />
+    <ClInclude Include="DXUT11\Optional\SDKsound.h" />
+    <ClInclude Include="DXUT11\Optional\SDKwavefile.h" />
+    <ClInclude Include="EffectCamera.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="FBXMaterial.h" />
+    <ClInclude Include="FBXModel.h" />
+    <ClInclude Include="FBXVertex.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="GSGrass.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputDevice.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="KeyboardState.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="MathHelper.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="MouseState.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="TessellationTerrain.h" />
+    <ClInclude Include="TerrainBlock.h" />
+    <ClInclude Include="TerrainController.h" />
+    <ClInclude Include="TerrainGeometry.h" />
+    <ClInclude Include="TerrainInstance.h" />
+    <ClInclude Include="TerrainPoint.h" />
+    <ClInclude Include="TerrainTessellator.h" />
+    <ClInclude Include="TerrainView.h" />
+    <ClInclude Include="DefaultModel.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
+    <ClInclude Include="VegetationRendering.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bark.dds" />
+    <None Include="blatt.dds" />
+    <None Include="Content\Config\Config.txt" />
+    <None Include="Content\Effects\ComplexGrass.fx" />
+    <None Include="Content\Effects\DefaultModelShader.fx" />
+    <None Include="Content\Effects\GeneralShaderFunctions.hlsl" />
+    <None Include="Content\Effects\GSGrass.fx" />
+    <None Include="Content\Effects\SimpleTerrain.fx" />
+    <None Include="Content\Effects\Terrain.fx" />
+    <None Include="Content\Effects\TessellationTerrain.fx" />
+    <None Include="Content\Effects\Trunk.fx" />
+    <None Include="Content\Models\GrassPatch.sdkmesh" />
+    <None Include="Content\Models\thinTree.sdkmesh" />
+    <None Include="Content\Models\tree2.sdkmesh" />
+    <None Include="Content\Models\trunk414.sdkmesh" />
+    <None Include="Content\Textures\Grass\grass_guide_v3_tex.dds" />
+    <None Include="Content\Textures\Grass\grass_v1_basic_tex.dds" />
+    <None Include="Content\Textures\Grass\grass_v2_light_tex.dds" />
+    <None Include="Content\Textures\Grass\grass_v3_dark_tex.dds" />
+    <None Include="Content\Textures\Terrain\Grass.dds" />
+    <None Include="Content\Textures\Terrain\Grass.png" />
+    <None Include="Content\Textures\Terrain\Heightmap.png" />
+    <None Include="Content\Textures\Terrain\Normalmap.png" />
+    <None Include="Content\Textures\Terrain\Rock.png" />
+    <None Include="Content\Textures\Terrain\Sand.png" />
+    <None Include="Content\Textures\Terrain\Stone.png" />
+    <None Include="Content\Textures\Terrain\Wavemap.png" />
+    <None Include="Content\Textures\Trees\rinde.dds" />
+    <None Include="Content\Textures\Trees\rinde_bumpmap.dds" />
+    <None Include="Content\Textures\Trees\trunk414_front.dds" />
+    <None Include="Content\Textures\Trees\trunk414_normalmap.dds" />
+    <None Include="Content\Textures\Trees\trunk414_side.dds" />
+    <None Include="Content\Textures\Trees\trunk414_top.dds" />
+    <None Include="Content\UI\Font.dds" />
+    <None Include="GrassBlade.dds" />
+    <None Include="ThinTree.dds" />
+    <None Include="TriangleShaders.fx" />
+    <None Include="trunk414.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Effects11\Effects11_2010.vcxproj">
+      <Project>{df460eab-570d-4b50-9089-2e2fc801bf38}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
